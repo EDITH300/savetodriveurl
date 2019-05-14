@@ -36,10 +36,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST" || isset($_GET['code']) || (isset($_SESS
 	//---------------------------------------------------------------
 	$client = new Google_Client();
 	// Get your credentials from the console
-	$client->setClientId('<CLIENT_ID>');
-	$client->setClientSecret('<CLIENT_SECRET>');
+	$client->setClientId('88782528270-22mb9s9ah8cmnhnd4us2c7mercv8a7dl.apps.googleusercontent.com');
+	$client->setClientSecret('DGv2yfotDNcgK-9mgDNlmNcg');
 	//set the URL of this same file & set the same url in google developer console.
-	$client->setRedirectUri('<URL_OF_THIS_PAGE_MUST_BE_SAME_TO_Redirect_URIs_IN_GOOGLE_DEVELOPER_CONSOLE>');
+	$client->setRedirectUri('http://filestocloud.appspot.com/LinkUploadToGoogleDrive.php');
 	$client->setScopes(array('https://www.googleapis.com/auth/drive.file'));
 	
 	
